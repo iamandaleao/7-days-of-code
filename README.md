@@ -1,9 +1,10 @@
 # Avatar API – Consumo com Python
 
-Este projeto faz parte do programa **#7DaysOfCode**, uma iniciativa da Alura para desafiar e aprimorar habilidades em programação ao longo de 7 dias.  
-O foco é praticar diariamente, aplicar conhecimentos em desafios reais e construir projetos para o portfólio.  
+Este projeto faz parte do programa **#7DaysOfCode**, uma iniciativa da **Alura** em parceria com o **Oracle Next Education (ONE)** para desafiar e aprimorar habilidades em programação ao longo de 7 dias.  
 
-Neste repositório, registro minha jornada no desafio de Python para backend, consumindo APIs REST e desenvolvendo aplicações práticas.
+O objetivo é praticar diariamente, aplicar conhecimentos em desafios reais e construir projetos para o portfólio.  
+
+Neste repositório, registro minha jornada no desafio de **Python para backend**, consumindo **APIs REST** e desenvolvendo aplicações práticas.  
 
 ##  Cronograma dos 7 Dias
 
