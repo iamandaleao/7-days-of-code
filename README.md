@@ -1,59 +1,41 @@
-# Avatar API – Consumo com Python
+# 7 Days of Code: Django!
 
-Este projeto faz parte do programa **#7DaysOfCode**, uma iniciativa da **Alura** em parceria com o **Oracle Next Education (ONE)** para desafiar e aprimorar habilidades em programação ao longo de 7 dias.  
+Projeto do [7 Days of Code com o Python para back-end](https://7daysofcode.io/matricula/python-web), na plataforma da **[Alura](https://www.alura.com.br/)**.
 
-O objetivo é praticar diariamente, aplicar conhecimentos em desafios reais e construir projetos para o portfólio.  
 
-Neste repositório, registro minha jornada no desafio de **Python para backend**, consumindo **APIs REST** e desenvolvendo aplicações práticas.  
+## Sobre o projeto
+Vamos consumir uma API de Avatar: A Lenda de Aang! Para isso, usaremos o Django como back-end e o Bootstrap para arrumar o front-end.
 
-##  Cronograma dos 7 Dias
+## Ao longo do projeto, as seguintes habilidades foram desenvolvidas:
+- Python;
+- Ambientes virtuais (venv);
+- Framework **Django**;
+- Consumo de APIs e uma requisição HTTP com o GET e o **módulo Requests**;
+- Bootstrap;
+- O uso da **biblioteca Googletrans**;
+- Tags e filters do Django, em específico para criar IDs automáticos;
+- Paginação.
 
-| Dia  | Data      | Desafio / Tema                                     |
-|-------|-----------|---------------------------------------------------|
-| 1     | 09/08/2025| Consumir API REST (Avatar API) usando Python      |
-| 2     | 10/08/2025| [Próximo desafio - descrição resumida]            |
-| 3     | 11/08/2025| [Próximo desafio - descrição resumida]            |
-| 4     | 12/08/2025| [Próximo desafio - descrição resumida]            |
-| 5     | 13/08/2025| [Próximo desafio - descrição resumida]            |
-| 6     | 14/08/2025| [Próximo desafio - descrição resumida]            |
-| 7     | 15/08/2025| Finalização e integração dos conhecimentos        |
+## Tecnologias utilizadas neste projeto:
+<img height="30" src="https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117"> <img height="30" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"> <img height="30" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"> <img height="30" src="https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"> 
 
-*Obs: Os temas dos próximos dias serão atualizados conforme os desafios forem liberados.*
+## Como reproduzir este repositório?
+* Você pode fazer um `git clone` do repositório para a sua máquina, deste modo:
 
-## Tecnologias Utilizadas
-
-- **Python 3.13.5**  
-- **Requests 2.28.2**  
-- Ferramentas adicionais sugeridas: Visual Studio Code, Postman ou Insomnia.
-
-##  Instalação e Configuração
-
-### Criar e ativar ambiente virtual (opcional, recomendado)
-```bash
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
 ```
-### Instale as dependências
-`pip install requests`
-
-### Como Executar
-`python main.py`
-
-### API Utilizada
-Acesse a API [Last Airbender API](https://last-airbender-api.fly.dev/api/v1/characters) para obter informações dos personagens.
-
-## Exemplo de Uso
-```python
-import requests
-
-url = "https://last-airbender-api.fly.dev/api/v1/characters"
-
-response = requests.get(url)
-
-if response.status_code == 200:
-    dados = response.json()
-    print(dados)
-else:
-    print(f"Erro na requisição: {response.status_code}")
+git clone https://github.com/iamandaleao/7-days-of-code.git
 ```
+* Para instalar as bibliotecas:
+
+```
+pip install -r requirements.txt
+```
+
+* E, para rodar o projeto:
+
+```
+python manage.py runserver
+```
+
+
+
