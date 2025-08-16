@@ -2,6 +2,7 @@
 
 Projeto do [7 Days of Code com o Python para back-end](https://7daysofcode.io/matricula/python-web), na plataforma da **[Alura](https://www.alura.com.br/)**.
 
+<div style="display: flex; justify-content: center;"><img src="img/cod-e-print.png" alt="codigo e print da tela" width="700"></div>
 
 ## Sobre o projeto
 Vamos consumir uma API de Avatar: A Lenda de Aang! Para isso, usaremos o Django como back-end e o Bootstrap para arrumar o front-end.
@@ -36,6 +37,9 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
+
+## Status
+<img src="https://img.shields.io/badge/Status-Finalizado-brightgreen">
 
 
 
