@@ -13,7 +13,9 @@ def index(request):
     # Verifica se deu tudo certo (status 200 = ok)
     if response.status_code == 200:
         dados = response.json()  # Converte para dicionário/lista Python
-        dados = [{**p, "id": p["_id"]} for p in dados]
+        for index, item in enumerate(dados, start=1):
+            item["id"] = index
+            
         return render(request, "desafioapp/index.html", {"dados":dados})
     else:
         print(f"Erro na requisição: {response.status_code}")
