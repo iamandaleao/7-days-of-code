@@ -1,22 +1,26 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import json
 import requests
 
 # Create your views here.
 def index(request):
-    url = "https://last-airbender-api.fly.dev/api/v1/characters"
+    page = int(request.GET.get("page", 1))
+    proxima = page + 1
+    url = f"https://last-airbender-api.fly.dev/api/v1/characters?page={page}"
 
-    # Faz a requisição GET
     response = requests.get(url)
 
-    # Verifica se deu tudo certo (status 200 = ok)
     if response.status_code == 200:
-        dados = response.json()  # Converte para dicionário/lista Python
-        for index, item in enumerate(dados, start=1):
+        dados = response.json()
+        
+        # Corrige IDs entre páginas
+        for index, item in enumerate(dados, start=(page - 1) * 20 + 1):
             item["id"] = index
             
-        return render(request, "desafioapp/index.html", {"dados":dados})
+        return render(request, "desafioapp/index.html", {
+            "dados": dados,
+            "pagina": page,
+            "proxima": proxima,
+        })
     else:
-        print(f"Erro na requisição: {response.status_code}")
         return HttpResponse(f"Erro na requisição: {response.status_code}")
